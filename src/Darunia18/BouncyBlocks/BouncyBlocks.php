@@ -100,7 +100,7 @@ class BouncyBlocks extends PluginBase implements Listener{
 
                 $this->fall->attach($player);
                 $motion = new Vector3($player->motionX, $player->motionY, $player->motionZ);
-                $motion->y = $this->bounceVelocity[$player];
+                $motion->z = $this->bounceVelocity[$player];
                 $player->setMotion($motion);
             }
 
